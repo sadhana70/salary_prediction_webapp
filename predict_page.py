@@ -14,25 +14,26 @@ regressor = data["model"]
 le_country = data["le_country"]
 le_education = data["le_education"]
 
+
 def show_predict_page():
     st.title("Software Developer Salary Prediction")
 
     st.write("""### We need some information to predict the salary""")
 
     countries = (
-        "United States",
+        "United States of America",
         "India",
-        "United Kingdom",
+        "United Kingdom of Great Britain and Northern Ireland",
         "Germany",
         "Canada",
         "Brazil",
         "France",
         "Spain",
-        "Australia",
+        "Israel",
         "Netherlands",
         "Poland",
         "Italy",
-        "Russian Federation",
+        "Norway",
         "Sweden",
     )
 
