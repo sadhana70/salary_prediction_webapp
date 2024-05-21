@@ -1,7 +1,7 @@
 import streamlit as st
 import pickle
 import numpy as np
-
+from PIL import Image
 
 def load_model():
     with open('saved_steps.pkl', 'rb') as file:
@@ -19,6 +19,11 @@ def show_predict_page():
     st.title("Software Developer Salary Prediction")
 
     st.write("""### We need some information to predict the salary""")
+
+    # Display a resized banner image
+    image_path = 'salary_banner.jpg'
+    image = Image.open(image_path)
+    st.image(image, width=500)  # Adjust the width as needed
 
     countries = (
         "United States of America",
